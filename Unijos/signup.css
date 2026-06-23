@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --uj-blue: #0ea5e9;
+  --uj-navy: #0b3a66;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --border: #e5e7eb;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111827;
+  background: #f3f7fb;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-banner {
+  background: #687787;
+}
+
+.top-banner .brand {
+  width: 100%;
+  margin: 0;
+  justify-content: flex-start;
+  padding: 60px;
+  color: #fff;
+  height: 110px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.brand h1 {
+  margin-top: -2px;
+  font-size: 26px;
+  letter-spacing: 0.2px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+}
+
+.page {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 28px 18px;
+
+}
+
+.cards {
+  display: flex;
+  gap: 14px;
+  width: 900px;
+  height: 200px;
+}
+
+@media (max-width: 760px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+
+
+.instructions,
+.form-area {
+  flex: 1;
+  padding: 18px 18px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+
+.instructions h2 {
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+
+
+.login-link {
+  display: inline-block;
+  color: var(--uj-blue);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Form */
+.form-area label {
+  display: block;
+  font-size: 13px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.form-area input {
+  width: 100%;
+  padding: 12px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  outline: none;
+  font-size: 14px;
+  margin-bottom: 14px;
+  background: #fff;
+}
+
+.form-area input:focus {
+  border-color: rgba(14, 165, 233, 0.7);
+  box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.15);
+}
+
+.form-area button {
+  width: 100%;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--uj-blue);
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.04s ease;
+}
+
+.form-area button:hover {
+  background: #0284c7;
+}
+
+.form-area button:active {
+  transform: translateY(1px);
+}
+
+/* Footer (kept at bottom naturally, not fixed) */
+.footer {
+  background: #0b1220;
+  color: #cbd5e1;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer p {
+  font-size: 13px;
+}
+
+.footer strong {
+  color: #ff8a5b;
+  font-weight: 900;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.footer-nav a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav span {
+  color: #64748b;
+}
+
+.help-widget,
+.help-text {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .brand h1 {
+    font-size: 22px;
+  }
+
+  .instructions,
+  .form-area {
+    padding: 18px;
+  }
+}

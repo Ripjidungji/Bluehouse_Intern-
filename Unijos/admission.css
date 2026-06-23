@@ -1,0 +1,155 @@
+body {
+    background: #f3f3f3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #687787;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.top-banner {
+    background: #687787;
+}
+
+.top-banner .brand {
+    width: 100%;
+    margin: 0;
+    justify-content: flex-start;
+    padding-left: 60px;
+    color: #fff;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 65px;
+    padding-bottom: 40px;
+}
+
+
+@media (max-width: 760px) {
+    .cards {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 18px;
+        box-sizing: border-box;
+    }
+}
+
+.card {
+    flex: 1 1 0;
+    background: white;
+    border: 1px solid #d3d3d3;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 100px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.left-section {
+
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding: 15px;
+    border-right: 1px solid #d3d3d3;
+    padding: 15px;
+    border-right: 1px solid #d3d3d3;
+
+}
+
+.left-section h2 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.left-section h3 {
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.left-section hr {
+    margin-bottom: 25px;
+    border: 1px solid #eee;
+}
+
+.left-section a {
+    color: #f5f1f1;
+    font-size: 18px;
+    background: #337ab7;
+    border-radius: 4px;
+}
+
+.right-section {
+    width: 500px;
+    padding: 15px;
+}
+
+.right-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.right-section input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.right-section button {
+    background: #337ab7;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.right-section button:hover {
+    background: #286090;
+}
+
+footer {
+    background: #050505;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+footer span {
+    color: #ff7b00;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+}

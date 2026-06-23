@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Jos Login Portal</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header class="top-banner">
+        <a href="webpageunijos.html"><div class="brand">
+            <div class="logo"><img src="uj logo.png" alt="uj logo"></div>
+            <h1>University of Jos</h1>
+        </div>
+        </a>
+    </header>
+
+    <div class="field">
+        <div class="instructions">
+            <h2>Please read the following Instructions.</h2>
+            <ul>
+                <li>Use your registered Email.</li>
+                <li>Type in your correct password. Click the button in the
+                    password field to unmask and make sure it is correct.
+                </li>
+                <li>Click the activation link sent to your email if your
+                    registration has not been confirmed.
+                </li>
+            </ul>
+        </div>
+
+        <div class="login-section">
+            <h2>Enter Your Login Details</h2>
+            <form>
+                <input type="email" placeholder="Enter Email" required>
+                <div class="password-box">
+                    <input type="password" id="password" placeholder="Enter Password" required>
+                    <button type="button" onclick="togglePassword()">   👁
+                    </button>
+                </div>
+                <button class="login-btn" type="submit">
+                    Login
+                </button>
+                <button class="recover-btn" type="button">
+                    Recover your password
+                </button>
+                <p class="create-account">
+                    <a href="#">Create an account</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            Copyright ©2026 University Of Jos.
+            All Rights Reserved
+        </div>
+
+        <div>
+            <a href="#">FAQ</a> |
+            <a href="#">Support</a>
+        </div>
+    </footer>
+
+    <script>
+        function togglePassword() {
+            let password =
+                document.getElementById("password");
+
+            if (password.type === "password") {
+                password.type = "text";
+            } else {
+                password.type = "password";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
