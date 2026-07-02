@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Login</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f2f5;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h2 { margin-bottom: 20px; color: #333; }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        .btn-login { background: #1877f2; }
+        .btn-google { background: #db4437; }
+        .btn-twitter { background: #1da1f2; }
+        .btn:hover { opacity: 0.9; }
+        .or { margin: 15px 0; color: #888; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Login</h2>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button class="btn btn-login">Sign In</button>
+        <p class="or">— or —</p>
+        <button class="btn btn-google">Google</button>
+        <button class="btn btn-twitter">Twitter</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+h1 {
+    color: blue;
+
+}
+
+#main-title {
+    font-size: 48px;
+    background: blue;
+    color: purple;
+}
+
+.intro {
+    color: green;
+    background: yellow;
+}
+
+/* p {
+    background: gray;
+    font-style: italic;
+} */
+
+.link {
+    color: orange;
+    text-decoration: none;
+}
+
+div {
+    background: red;
+    
+}
+
+.boxmodel {
+    padding: 20px;
+    background: blue;
+    border: 2px solid black;
+    margin: 80px;
+}
+.Cards{
+    display: flex;
+    width:1700px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 5px;
+    background: red;
+    align-items: center;
+    justify-content: baseline;
+    
+
+}
+.card{
+    display: flex;
+    width:600px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 5px;
+    background: whitesmoke;
+    align-items: center;
+    justify-content: baseline;
+    flex-direction: column;
+    border:10px solid black;
+
+}
+img {
+   width: 400px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 15px; 
+    background: tan;
+    border-radius: 20px;
+}
