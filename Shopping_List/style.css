@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:#333;
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+#itemInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #28a744;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+    background-color: #08595f;
+}
+
+#shoppingList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#shoppingList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.item-text {
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.edit-btn {
+    background-color: orange;
+}
+
+.delete-btn {
+    background-color: red;
+}
+
+#clearBtn {
+    width: 100%;
+    background-color: #333;
+    margin-top: 10px;
+}
