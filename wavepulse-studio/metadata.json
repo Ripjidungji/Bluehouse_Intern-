@@ -1,0 +1,6 @@
+{
+  "name": "Audio Visualizer & Playlist Studio",
+  "description": "Interactive Web Audio API visualizer, playlist workstation, waveform scrubber with slicing, audio equalizer, and timestamped annotations.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
