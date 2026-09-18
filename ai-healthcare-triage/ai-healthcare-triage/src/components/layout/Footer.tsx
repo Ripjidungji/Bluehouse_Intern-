@@ -1,0 +1,1 @@
+export function Footer() { return <footer className="border-t border-slate-200 bg-white px-6 py-6 text-center text-sm text-slate-500">© 2026 CareFlow. Prototype for healthcare navigation and pre-consultation support only.</footer> }

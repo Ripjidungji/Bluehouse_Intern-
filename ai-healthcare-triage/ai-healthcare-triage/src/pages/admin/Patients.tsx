@@ -1,0 +1,3 @@
+import { patients } from '../../data/patients'
+import { Badge } from '../../components/ui/Badge'
+export default function Patients(){return <div><h1 className="text-3xl font-black">Patients</h1><div className="mt-6 overflow-x-auto rounded-2xl border bg-white"><table className="w-full min-w-[700px] text-left text-sm"><thead className="bg-slate-50 text-xs uppercase text-slate-500"><tr><th className="p-4">Patient</th><th>Age</th><th>Specialty</th><th>Priority</th><th>Status</th></tr></thead><tbody>{patients.map(p=><tr className="border-t" key={p.id}><td className="p-4 font-bold">{p.name}</td><td>{p.age}</td><td>{p.specialty}</td><td><Badge value={p.priority}/></td><td><Badge value={p.status}/></td></tr>)}</tbody></table></div></div>}

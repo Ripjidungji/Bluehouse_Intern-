@@ -1,0 +1,7 @@
+import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { Button } from '../components/ui/Button'
+import { Input } from '../components/ui/Input'
+import { Card } from '../components/ui/Card'
+import { useAuth } from '../context/AuthContext'
+export default function Register(){const {register}=useAuth();const nav=useNavigate();const[name,setName]=useState('');const[email,setEmail]=useState('');const[password,setPassword]=useState('');function submit(e:React.FormEvent){e.preventDefault();if(name&&email&&password){register(name,email,password);nav('/patient')}}return <main className="flex min-h-screen items-center justify-center bg-slate-50 p-5"><Card className="w-full max-w-md p-7"><Link to="/" className="mb-6 inline-flex text-sm font-bold text-sky-600 hover:text-sky-700">← Back to home</Link><h1 className="text-2xl font-black">Create patient account</h1><form onSubmit={submit} className="mt-7 space-y-4"><label className="block text-sm font-semibold">Full name<Input required value={name} onChange={e=>setName(e.target.value)}/></label><label className="block text-sm font-semibold">Email<Input required type="email" value={email} onChange={e=>setEmail(e.target.value)}/></label><label className="block text-sm font-semibold">Password<Input required minLength={6} type="password" value={password} onChange={e=>setPassword(e.target.value)}/></label><Button className="w-full" type="submit">Create account</Button></form></Card></main>}

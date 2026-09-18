@@ -1,0 +1,2 @@
+import { Card } from '../ui/Card'
+export function ActivityList() { return <Card className="p-5"><h3 className="mb-4 font-bold">Recent activity</h3><div className="space-y-4 text-sm"><p><b>3 new assessments</b><span className="block text-slate-500">received in the last hour</span></p><p><b>2 consultations completed</b><span className="block text-slate-500">today</span></p><p><b>1 high-priority case</b><span className="block text-slate-500">requires review</span></p></div></Card> }
